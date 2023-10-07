@@ -1,0 +1,444 @@
+:root {
+    --black--: black;
+    --seagreen--: #00c4bd;
+    --white--: white;
+    --silver--: #9c9c9cb3;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+ .navbar {
+    height: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 14px 20px;
+    position: sticky;
+    top: 0;
+    background-color: rgba(241, 242, 246, 0.7);
+    z-index: 1000;
+}
+
+
+
+ .navbar .menu li {
+    display: inline-block;
+    margin: 0 12px;
+}
+
+ .navbar .menu li a {
+    text-decoration: none;
+    color: var(--black--);
+}
+
+ .navbar .menu li a:hover {
+    color: var(--seagreen--);
+}
+
+
+.container {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(201, 198, 198, 0.4), rgba(241, 242, 246, 0.4)), url("https://images.unsplash.com/photo-1543269865-0a740d43b90c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NzV8fGh1bWFuJTIwd2l0aCUyMGxhcHRvcHxlbnwwfDB8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+    z-index: 100;
+}
+/* navbar ends */
+
+.container .landing {
+    width: 100%;
+    height: 80%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.container .landing .landing-text {
+    width: 40%;
+}
+
+.container .landing .landing-text h1 {
+    font-size: 40px;
+    font-weight: 400;
+}
+
+.container .landing .landing-text p {
+    text-align: justify;
+    margin-top: 10px;
+    line-height: 1.5;
+}
+
+.container .landing .landing-text button {
+    width: 120px;
+    height: 40px;
+    margin-top: 10px;
+    background-color: var(--seagreen--);
+    color: var(--white--);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: 0.7s;
+}
+
+.container .landing .landing-text button:hover{
+    background-color: var(--white--);
+    color: var(--black--);
+}
+
+/* container ends */
+.about {
+    margin-top: 40px;
+    height: 200px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about .about-text {
+    width: 60%;
+}
+
+.about .about-text h2 {
+    font-size: 40px;
+    text-align: center;
+}
+
+.about .about-text p {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.about .about-text .signature {
+    font-family: 'Great Vibes', cursive;
+    font-size: 40px;
+    margin-top: 10px;
+}
+
+/* about ends */
+
+.skills {
+    width: 100%;
+    height: 400px;
+    background: linear-gradient(to right, #fff, rgba(201, 198, 198, 0)), url("https://img.freepik.com/free-vector/realistic-tropical-leaves-background_52683-63403.jpg?size=626&ext=jpg&ga=GA1.1.1950757726.1696411280&semt=sph");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom center;
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+}
+
+.skills .skill-card {
+    width: 60%;
+    height: 100%;
+    background-color: var(--white--);
+    padding: 6% 12%;
+}
+
+.skills .skill-card .skill-text {
+    margin: 20px 0;
+}
+
+.skills .skill-card .skill-text h6 {
+    margin: 14px 0;
+}
+
+.skills .skill-card .skill-outer {
+    width: 300px;
+    height: 3px;
+    background-color: var(--black--);
+    position: relative;
+    border-radius: 12px;
+}
+
+.skills .skill-card .skill-inner {
+    width: 260px;
+    height: 5px;
+    background-color: var(--seagreen--);
+    position: absolute;
+}
+
+/* skill ends */
+
+.projects {
+    height: 300px;
+    width: 100%;
+    background-color: var(--seagreen--);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.projects .project-card {
+    width: 20%;
+    height: 250px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    color: var(--white--);
+}
+
+.projects .project-card .icon {
+    font-size: 60px;
+}
+
+.projects .project-card .project-text .counter {
+    font-weight: 700;
+    font-size: 30px;
+}
+
+/* project ends */
+
+.gallery {
+    height: 400px;
+    width: 100%;
+}
+
+.gallery .gallery-images {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin: 20px 0;
+}
+
+.gallery .gallery-images img {
+    width: 23%;
+    height: 180px;
+    border-radius: 3px;
+    transition: 0.7s;
+}
+
+.gallery .gallery-images img:hover{
+    cursor: pointer;
+    transform: translateY(-12px);
+}
+/* gallery ends */
+
+.work {
+    width: 100%;
+    height: 560px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.work .work-text {
+    text-align: center;
+    margin: 10px 0;
+}
+
+.work .work-text h1 {
+    font-weight: 500;
+}
+
+.work .work-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url("https://images.unsplash.com/photo-1529485726363-95c8d62f656f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YnVkZGhhfGVufDB8MHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60");
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 20px;
+}
+
+.work .work-img i {
+    font-size: 50px;
+    color: var(--seagreen--);
+}
+
+/* work ends */
+
+.services {
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    flex-wrap: wrap;
+}
+
+.services .cards {
+    width: 23%;
+    height: 190px;
+    background-color: var(--white--);
+    margin: 4px 8px;
+    display: flex;
+}
+
+.services .cards:hover{
+    background-color: #FFFDD0;
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+
+
+.services .cards .cards-icon {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.services .cards .cards-icon i {
+    font-size: 40px;
+}
+
+.services .cards .cards-icon span {
+    margin-top: 4px;
+    text-align: center;
+    font-weight: 600;
+}
+
+.services .cards .cards-icon p {
+    margin-top: 4px;
+    text-align: center;
+    font-size: 14px;
+}
+
+/* services ends */
+
+.companies {
+    margin-top: 20px;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.companies .company {
+    width: 80%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.companies .company .company-card {
+    width: 25%;
+    height: 100px;
+
+    margin: 0 20px;
+}
+
+.companies .company .company-card img {
+    width: 100%;
+    height: 100%;
+    filter: grayscale(1);
+    transition: 0.7s;
+}
+
+.companies .company .company-card img:hover {
+    filter: grayscale(0);
+}
+
+/* companies ends */
+
+.form {
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    margin-top: 120px;
+}
+
+.form .form-text {
+    width: 60%;
+    height: 100%;
+    text-align: center;
+}
+
+.form .form-text h2 {
+    font-size: 40px;
+    font-weight: 400;
+}
+
+.form .form-text .form-inputs {
+    margin-top: 20px;
+}
+
+.form .form-text .form-inputs input {
+    width: 300px;
+    height: 40px;
+    outline: none;
+    padding: 0 15px;
+    margin: 12px 0px;
+    border: none;
+    border-radius: 4px;
+    background-color: var(--silver--);
+}
+
+.form .form-text .form-inputs #title {
+    width: 600px;
+}
+
+.form .form-text .form-inputs textarea {
+    margin-top: 12px;
+    width: 600px;
+    padding: 8px 15px;
+    border: none;
+    background-color: var(--silver--);
+    outline: none;
+}
+
+.form .form-text .form-inputs button {
+    margin-top: 12px;
+    width: 120px;
+    height: 30px;
+    text-align: center;
+    background-color: var(--seagreen--);
+    border: none;
+    outline: none;
+    border-radius: 2px;
+    line-height: 2.4;
+}
+
+/* form ends */
+
+.footer {
+    height: 300px;
+    width: 100%;
+    background-color: var(--black--);
+    display: flex;
+
+    justify-content: center;
+}
+
+.footer .footer-box {
+    width: 20%;
+    height: 100%;
+    color: var(--white--);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.footer .footer-box ul li{
+    list-style: none;
+    transition: 0.7s;
+}
+
+
+.footer .footer-box ul li:hover{
+    transform: translateX(12px);
+}
+
+/* footer ends */
